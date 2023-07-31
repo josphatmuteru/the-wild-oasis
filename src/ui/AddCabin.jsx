@@ -1,14 +1,16 @@
 import Button from "./Button";
 import Modal from "./Modal";
 import CreateCabinForm from "../features/cabins/CreateCabinForm";
-import CabinTable from "../features/cabins/CabinTable";
+import Row from "./Row";
 
 function AddCabin() {
   return (
     <div>
       <Modal>
         <Modal.Open opens="cabin-form">
-          <Button>Add new cabin</Button>
+          <Row>
+            <Button $size="large">Add new cabin</Button>
+          </Row>
         </Modal.Open>
         <Modal.Window name="cabin-form">
           <CreateCabinForm />

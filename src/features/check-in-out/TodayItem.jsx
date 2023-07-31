@@ -38,8 +38,8 @@ function TodayItem({ activity }) {
 
       {status === "unconfirmed" && (
         <Button
-          size="small"
-          variation="primary"
+          $size="small"
+          $variation="primary"
           as={Link}
           to={`/checkin/${id}`}
         >

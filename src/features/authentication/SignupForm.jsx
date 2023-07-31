@@ -83,7 +83,7 @@ function SignupForm() {
         {/* type is an HTML attribute! */}
         <Button
           onClick={reset}
-          variation="secondary"
+          $variation="secondary"
           type="reset"
           disabled={isLoading}
         >
